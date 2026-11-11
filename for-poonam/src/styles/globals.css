@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fredoka:wght@300..700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..800;1,400..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FAF7F2;
+  color: #3D3A45;
+  font-family: 'Fredoka', 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.dark body {
+  background-color: #0C0F1D;
+  color: #FAF7F2;
+}
+
+/* Cloud Card Styles */
+.cloud-card {
+  border-radius: 2.2rem;
+  box-shadow: 0 16px 40px -10px rgba(229, 152, 171, 0.18), 0 0 20px rgba(255, 234, 223, 0.4);
+}
+
+.cloud-bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  filter: blur(2px);
+  pointer-events: none;
+}
+
+.dark .cloud-bubble {
+  background: rgba(30, 41, 69, 0.4);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF7F2;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #0C0F1D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFCCD5;
+  border-radius: 9999px;
+}
